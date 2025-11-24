@@ -126,7 +126,9 @@ function Home() {
             <p>Easily understand key indicators that help you profitably source products to sell on Amazon, whether doing Retail Arbitrage, Online Arbitrage or wholesale. SAS analysis helps you quickly answer the key sourcing questions:</p>
             <h3>CAN I SELL IT? DOES IT SELL? IS IT PROFITABLE?</h3>
             <div className="hero-buttons">
-                <button className="hero-button-white">Try for Free</button>
+                <a href="https://whop.com/checkout/4WjgWEt7wqNHow8b7z-xYg9-CuuR-5TT4-eLZ2SipLUXZ1/" target="_blank" rel="noopener noreferrer">
+                  <button className="hero-button-white">Try for Trial</button>
+                </a>
                 <button className="hero-button-blue">Watch Demo</button>
             </div>
             </div>
@@ -160,7 +162,9 @@ function Home() {
 
           </div>
         </div>
-        <button className="free-trial-button">FREE TRIAL</button>
+        <a href="https://whop.com/checkout/4WjgWEt7wqNHow8b7z-xYg9-CuuR-5TT4-eLZ2SipLUXZ1/" target="_blank" rel="noopener noreferrer">
+          <button className="free-trial-button">FREE TRIAL</button>
+        </a>
         <div className="person-laptop-container">
           <img src={personWithLaptopImage} alt="Person using laptop" className="person-laptop-image" />
         </div>
@@ -262,7 +266,9 @@ function Home() {
         <div  className='marketplaces-texts'>
             <h2>Supported Amazon  Marketplaces</h2>
             <p>Use SAS to analyze products across 7 Amazon marketplaces: US, UK, Canada, France, Spain, Germany, and Italy. With a single click you can do full analysis in other marketplaces, using local, EFN or PAN-EU fulfilment.</p>
-            <button className="call-to-action-button">Try for Free</button>
+            <a href="https://whop.com/checkout/4WjgWEt7wqNHow8b7z-xYg9-CuuR-5TT4-eLZ2SipLUXZ1/" target="_blank" rel="noopener noreferrer">
+              <button className="call-to-action-button">Try for Trial</button>
+            </a>
         </div>
         <div style={{width:'100%'}} >
             <div style={{width:'100%'}}>

@@ -16,11 +16,9 @@ function Footer() {
           <div className="newsletter-text-and-form">
             <h2>Get Weekly Insights, Arbitrage Advice and Amazon Selling Top Tips – Subscribe to Our Newsletter Today!</h2>
             <form className="newsletter-form">
-              <div className="name-inputs">
                 <input type="text" placeholder="First" className="form-input" />
                 <input type="text" placeholder="Last" className="form-input" />
-              </div>
-              <input type="email" placeholder="Enter your email address..." required className="form-input email-input" />
+              <input type="email" placeholder="Enter your email address..." required className="form-input" />
               <button type="submit" className="submit-button">SUBMIT</button>
             </form>
           </div>

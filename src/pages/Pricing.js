@@ -14,7 +14,9 @@ function Pricing() {
             <li>Limited History</li>
             <li>Single User</li>
           </ul>
-          <button className="pricing-button">Choose Starter</button>
+          <a href="https://whop.com/checkout/4WjgWEt7wqNHow8b7z-xYg9-CuuR-5TT4-eLZ2SipLUXZ1/" target="_blank" rel="noopener noreferrer">
+            <button className="pricing-button">Try for Trial</button>
+          </a>
         </div>
         <div className="pricing-card featured">
           <h2>Pro</h2>
@@ -25,7 +27,9 @@ function Pricing() {
             <li>Multi-User Access</li>
             <li>Priority Support</li>
           </ul>
-          <button className="pricing-button">Choose Pro</button>
+          <a href="https://whop.com/checkout/4WjgWEt7wqNHow8b7z-xYg9-CuuR-5TT4-eLZ2SipLUXZ1/" target="_blank" rel="noopener noreferrer">
+            <button className="pricing-button">Choose Pro</button>
+          </a>
         </div>
         <div className="pricing-card">
           <h2>Premium</h2>
@@ -36,7 +40,9 @@ function Pricing() {
             <li>Dedicated Account Manager</li>
             <li>API Access</li>
           </ul>
-          <button className="pricing-button">Choose Premium</button>
+          <a href="https://whop.com/checkout/4WjgWEt7wqNHow8b7z-xYg9-CuuR-5TT4-eLZ2SipLUXZ1/" target="_blank" rel="noopener noreferrer">
+            <button className="pricing-button">Choose Premium</button>
+          </a>
         </div>
       </div>
       <p>Need more? Contact us for enterprise solutions.</p>
