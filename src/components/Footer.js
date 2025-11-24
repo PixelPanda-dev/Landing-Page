@@ -38,9 +38,9 @@ function Footer() {
           </div>
 
           <div className="footer-links-group">
-            <h3>New to SellerAmp?</h3>
+            <h3>New to eSouct?</h3>
             <ul>
-              <li><a href="#">About SellerAmp</a></li>
+              <li><a href="#">About eSouct</a></li>
               <li><a href="#">Features</a></li>
               <li><a href="#">News & Updates</a></li>
               <li><a href="#">Resources</a></li>
@@ -70,7 +70,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>Copyright © 2025 Seller Amp Ltd | Registered in England & Wales No. 12239960 | All Rights Reserved</p>
+          <p>Copyright © 2025 eSouct Ltd | Registered in England & Wales No. 12239960 | All Rights Reserved</p>
         </div>
       </footer>
     </>

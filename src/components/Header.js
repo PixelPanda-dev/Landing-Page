@@ -18,9 +18,9 @@ function Header() {
         <nav className="navbar-links">
           <ul>
             <li><Link to="/features">Features</Link></li> {/* Re-added Features link */}
-            <li><Link to="/pricing">Pricing</Link></li>
+            <li><a href="https://whop.com/checkout/4WjgWEt7wqNHow8b7z-xYg9-CuuR-5TT4-eLZ2SipLUXZ1/" target="_blank" rel="noopener noreferrer">Pricing</a></li>
             <li><Link to="/resources">Resources</Link></li>
-            <li><Link to="/login">Login</Link></li>
+            <li><a href="https://app.emoneyamz.com/" target="_blank" rel="noopener noreferrer">Login</a></li>
           </ul>
         </nav>
         <button className="free-trial-button">FREE TRIAL</button>

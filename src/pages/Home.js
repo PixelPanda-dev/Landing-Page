@@ -1,15 +1,26 @@
 import React, { useEffect, useRef } from 'react';
 import analysisImage from '../assets/Website-image-1.webp'; // Corrected import for Section 4
-import imageOne from '../assets/1.png'; // Corrected import for section 5
+import imageOne from '../assets/world-map.png'; // Corrected import for section 5
 import TestimonialCard from '../components/TestimonialCard';
 import arbitragePeopleImage from '../assets/arbitrage.webp'; // Corrected: Using existing arbitrage.webp image
-import SellerAmpHomepage from '../assets/SellerAmpHomepage.webp'; // New: Import for Hero Section image
-import laptop01Image from '../assets/laptop-01.webp'; // New: Import for Section 2 image
-import phonesImage from '../assets/phones.webp'; // New: Import for Section 2 image
-import laptop02Image from '../assets/laptop-02.webp'; // New: Import for Section 2 image
-import personWithLaptopImage from '../assets/person-with-laptop.webp'; // New: Import for Section 2 image
-import analysisGirlLaptopImage from '../assets/analysis.webp'; // New: Import for Section 3 image
-import homeVideoImage from '../assets/home-video.jpg'; 
+import SellerAmpHomepage from '../assets/one.png'; // New: Import for Hero Section image
+import laptop01Image from '../assets/laptop.png'; // New: Import for Section 2 image
+import phonesImage from '../assets/mobile-app.png'; // New: Import for Section 2 image
+import laptop02Image from '../assets/web-app.png'; // New: Import for Section 2 image
+import personWithLaptopImage from '../assets/twelve.png'; // New: Import for Section 2 image
+import analysisGirlLaptopImage from '../assets/analysis.png'; // New: Import for Section 3 image
+import homeVideoImage from '../assets/five.png'; 
+import creditCardImage from '../assets/kk1.png'; // Placeholder for credit card image
+import shoeImage from '../assets/analysis.png'; // Placeholder for shoe image
+import laptopCouponsImage from '../assets/nine.png'; // Placeholder for laptop with coupons image
+import treeImage from '../assets/ten.png'; // Placeholder for laptop with coupons image
+
+import avatar1 from '../assets/avatar-1.jpeg';
+import avatar2 from '../assets/avatar-2.jpeg';
+import avatar3 from '../assets/avatar-3.jpeg';
+import avatar4 from '../assets/avatar-4.jpeg';
+import avatar5 from '../assets/avatar-5.jpeg';
+import avatar6 from '../assets/avatar-6.jpeg';
 
 // Testimonial Images
 import paulSheriffsImage from '../assets/paul-sheriffs-400x401.jpeg';
@@ -24,37 +35,37 @@ function Home() {
       title: "Ecom Support Services Ltd",
     },
     {
-      image: paulSheriffsImage,
+      image: avatar1,
       quote: "Put simply I couldn’t run my 6 figure Amazon business without SAS. It’s the vital component for my buying decisions. It helps me to confidently buy stock, knowing that my figures are correct.",
       name: "Emily Knowles",
       title: "Amazon Sellers Knowledge Bank",
     },
     {
-      image: paulSheriffsImage,
+      image: avatar2,
       quote: "SAS never fails to impress me – the constant upgrades of a product that already helps my sales soar to 7 figures is a huge bonus. If you are one of the people on the fence you need to jump off it right now!",
       name: "Amanda Hill",
       title: "iDiva",
     },
     {
-      image: paulSheriffsImage,
+      image: avatar3,
       quote: "I have used SAS since I started selling on Amazon... It gives me a great piece of mind knowing that whilst I have used other pieces of software, this has been the best.",
       name: "Pedro Hunter",
       title: "Amazon seller",
     },
     {
-      image: paulSheriffsImage,
+      image: avatar4,
       quote: "Hands down the best manually sourcing tool on the market. Always developing new features and constantly improving the software. Keep up the amazing work!",
       name: "Alex Haydon",
       title: "Hampstead Homes",
     },
     {
-      image: paulSheriffsImage,
+      image: avatar5,
       quote: "Using SAS transformed our RA/OA sessions. We would never be without it and it’s a tool that has enabled us to achieve our best results to date.",
       name: "Keiran Mussell",
       title: "Hampstead Homes",
     },
     {
-      image: paulSheriffsImage,
+      image: avatar6,
       quote: "Initially I was hesitant to make the switch from another app, but now it’s become my go-to tool for all things FBA. In fact I use it on every single one of my analysis...",
       name: "Paul Sheriffs",
       title: "Amazon seller of four years",
@@ -70,6 +81,7 @@ function Home() {
   const section5Ref = useRef(null);
   const section6Ref = useRef(null);
   const arbitrageSectionRef = useRef(null);
+  const cashBackSectionRef = useRef(null); // New: Ref for the Cash Back section
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -86,7 +98,7 @@ function Home() {
 
     const refs = [
       heroContentRef, heroImageRef, section2Ref, section3Ref,
-      section4Ref, section5Ref, section6Ref, arbitrageSectionRef
+      section4Ref, section5Ref, section6Ref, arbitrageSectionRef, cashBackSectionRef
     ];
 
     refs.forEach(ref => {
@@ -137,26 +149,15 @@ function Home() {
         <div className="tool-cards">
           <div className="tool-card">
             <img src={laptop01Image} alt="Chrome extension" className="tool-card-image" />
-            <div className='tool-card-text'>
-                <h4>Chrome extension</h4>
-                <p>Analysis within the Chrome window, while on Amazon or any website.</p>
-            </div>
+
           </div>
           <div className="tool-card">
             <img src={phonesImage} alt="Mobile app" className="tool-card-image" />
-            <div className='tool-card-text'>
-                <h4>Mobile app</h4>
-                <p>Scan a barcode, search by text or share to the app on your phone or tablet.</p>
 
-            </div>
           </div>
           <div className="tool-card">
             <img src={laptop02Image} alt="Web App" className="tool-card-image" />
-            <div className='tool-card-text'>
-                <h4>Web App</h4>
-                <p>See all key the information on one screen, to conduct more thorough analysis.</p>
 
-            </div>
           </div>
         </div>
         <button className="free-trial-button">FREE TRIAL</button>
@@ -165,11 +166,51 @@ function Home() {
         </div>
       </section>
 
+      {/* New Section: Cash Back Design */}
+      <section className="section-cash-back animate-on-scroll" ref={cashBackSectionRef}>
+
+
+        <div className="cash-back-visuals-container">
+          <div className="cash-back-card-section">
+            <img src={creditCardImage} alt="Hand holding credit card" className="cash-back-card-image" />
+          </div>
+          <div className="cash-back-earned-section">
+            <div className="cash-back-shoe-section">
+              <img src={shoeImage} alt="Adidas shoe with cash back labels" className="cash-back-shoe-image" />
+              <div className="cash-back-bubble cash-back-bubble-10">10% Cash Back</div>
+              <div className="cash-back-bubble cash-back-bubble-8">8% Cash Back</div>
+              <div className="cash-back-bubble cash-back-bubble-2">2% Cash Back</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="cash-back-more-info-container">
+          <div className="cash-back-more-text">
+            <h2>eSouct Best !? Why?</h2>
+            <p>Earn on everything from clothes and electronics, to restaurants and ride-sharing. We'll find you deals on more brands, apps and services so you can shop easy.</p>
+          </div>
+          <div className="cash-back-laptop-section">
+            <img src={laptopCouponsImage} alt="Laptop with coupons" className="cash-back-laptop-image" />
+          </div>
+        </div>
+
+        <div className="cash-back-more-info-container">
+          <div className="cash-back-laptop-section">
+            <img src={treeImage} alt="Laptop with coupons" className="cash-back-laptop-image" />
+          </div>
+          <div className="cash-back-more-text">
+            <h2>eSouct Best !? Why?</h2>
+            <p>Earn on everything from clothes and electronics, to restaurants and ride-sharing. We'll find you deals on more brands, apps and services so you can shop easy.</p>
+          </div>
+        </div>
+
+      </section>
+
       {/* Section 3: Comprehensive Analysis */}
       <section className="section-3-analysis-new-design animate-on-scroll" ref={section3Ref}>
-        <div style={{display:'grid',gridTemplateColumns:'1fr 1fr', padding:'20px 50px', gap:'30px'}}>
+        <div className='arbitrage-content-container'>
             <div className="analysis-content-left">
-            <h2>Comprehensive <br/><span>Analysis</span> </h2>
+            <h2>Comprehensive <br/><span style={{color:'#2ea556'}}>Analysis</span> </h2>
             <p>SAS presents and organizes the information you need to make informed decisions about your Amazon sourcing. Understand all aspects of the product, sales, profitability and competition. Features include:</p>
     
             </div>
@@ -207,7 +248,7 @@ function Home() {
       {/* Section 4: What can SAS do? */}
       <section className="section-4-what-can-do-new-design animate-on-scroll" ref={section4Ref}>
         <div className="section-4-what-can-do-card" style={{ backgroundImage: `url(${homeVideoImage})` }}>
-          <h2>What can SAS do?</h2>
+          <h2 style={{fontSize:'2.5rem'}}>What can SAS do?</h2>
           <p>SAS presents and organizes the information you need to make informed sourcing decisions for your Amazon sourcing. Understand all aspects of the product, sales, profitability and competition.</p>
           <div className="play-button-container">
             <div className="play-button"></div>
@@ -218,14 +259,14 @@ function Home() {
 
       {/* Section 5: Supported Amazon Marketplaces */}
       <section className="section-5-marketplaces animate-on-scroll" ref={section5Ref}>
-        <div style={{textAlign:'left', padding:'30px 100px'}}>
-            <h2>Supported<br/> Amazon <br/> Marketplaces</h2>
+        <div  className='marketplaces-texts'>
+            <h2>Supported Amazon  Marketplaces</h2>
             <p>Use SAS to analyze products across 7 Amazon marketplaces: US, UK, Canada, France, Spain, Germany, and Italy. With a single click you can do full analysis in other marketplaces, using local, EFN or PAN-EU fulfilment.</p>
             <button className="call-to-action-button">Try for Free</button>
         </div>
         <div style={{width:'100%'}} >
             <div style={{width:'100%'}}>
-                <img src={imageOne}></img>
+                <img src={imageOne} alt="Amazon Marketplaces supported by eSouct" style={{width:'100%'}}></img>
             </div>
         </div>
         
