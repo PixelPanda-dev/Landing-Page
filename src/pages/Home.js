@@ -129,7 +129,7 @@ function Home() {
                 <a href="https://whop.com/checkout/4WjgWEt7wqNHow8b7z-xYg9-CuuR-5TT4-eLZ2SipLUXZ1/" target="_blank" rel="noopener noreferrer">
                   <button className="hero-button-white">Try for Trial</button>
                 </a>
-                <button className="hero-button-blue">Watch Demo</button>
+          
             </div>
             </div>
 
