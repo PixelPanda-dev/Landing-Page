@@ -13,6 +13,7 @@ function Pricing() {
             <li>Basic Sourcing Analysis</li>
             <li>Limited History</li>
             <li>Single User</li>
+            <li>For Trail</li>
           </ul>
           <a href="https://whop.com/checkout/4WjgWEt7wqNHow8b7z-xYg9-CuuR-5TT4-eLZ2SipLUXZ1/" target="_blank" rel="noopener noreferrer">
             <button className="pricing-button">Try for Trial</button>

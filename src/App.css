@@ -4595,5 +4595,13 @@ code {
     text-decoration: none;
   }
 
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-button-white {
+    padding: 10px 10px;
+  }
+
 }
 

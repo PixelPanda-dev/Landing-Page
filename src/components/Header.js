@@ -28,11 +28,11 @@ function Header() {
             <li><a href="https://app.emoneyamz.com/" target="_blank" rel="noopener noreferrer" onClick={handleToggle}>Login</a></li>
           </ul>
         </nav>
-        {!isOpen && (
+        
           <a href="https://whop.com/checkout/4WjgWEt7wqNHow8b7z-xYg9-CuuR-5TT4-eLZ2SipLUXZ1/" target="_blank" rel="noopener noreferrer">
             <button className="free-trial-button">FREE TRIAL</button>
           </a>
-        )}
+        
         <div className="hamburger-menu-icon" onClick={handleToggle}>
           <div className="bar"></div>
           <div className="bar"></div>
