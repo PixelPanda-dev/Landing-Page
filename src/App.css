@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -26,7 +26,7 @@ code {
 }
 
 .hero-section h1 {
-  font-family: 'Anton', sans-serif;
+  font-family: inherit;
   font-weight: bolder;
   color: #2da657;
   font-size: 3.5rem;
@@ -3625,6 +3625,14 @@ code {
      grid-template-columns: 1fr;
   }
 
+  .hero-content {
+    padding: 0 10px;
+  }
+
+  .hero-section h1 {
+    line-height: 1.1;
+  }
+
   .section-4-what-can-do-card p {
     display: none;
   }
@@ -4406,4 +4414,156 @@ code {
     grid-template-columns: 1fr;
     padding: 0 10px;
   }
+}
+
+
+/* --- FINAL, PRECISE Hamburger Menu & Mobile Navigation Styles (Matching Image) --- */
+
+/* General Mobile Header Layout */
+@media (max-width: 768px) {
+  .main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  /* Hide desktop navigation and free trial button on mobile */
+  .main-navbar .navbar-links,
+  .main-navbar a .free-trial-button {
+    display: none;
+  }
+}
+
+/* Hamburger Icon Styling */
+.hamburger-menu-icon {
+  display: none; /* Hidden by default on desktop */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 1002; /* Ensure it's clickable */
+}
+
+.hamburger-menu-icon .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+/* Hamburger Icon Animation when Open */
+.hamburger-menu-icon.open .bar:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.hamburger-menu-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu-icon.open .bar:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+/* Mobile Navigation Menu Styling */
+@media (max-width: 768px) {
+  .hamburger-menu-icon {
+    display: flex; /* Show hamburger on mobile */
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    left: -70%; /* Hidden off-screen to the left */
+    width: 70%; /* Occupy 70% of the screen width */
+    height: 100vh;
+    background-color: #f8f8f8; /* White/off-white background for the menu panel */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Padding for the entire menu panel */
+    transition: left 0.3s ease-in-out;
+    z-index: 1001;
+    display: flex; /* Flex container for content inside the menu panel */
+    flex-direction: column; /* Stack content vertically within the panel */
+    align-items: flex-end; /* Align content (including the ul) to the right within the panel */
+  }
+
+  .navbar-links.open {
+    left: 0; /* Slide in to occupy 70% of the screen from left */
+  }
+
+  .navbar-links ul {
+    list-style: disc; /* Display bullet points */
+    list-style-position: outside; /* Bullet outside the text block */
+    padding-right: 20px; /* Space for the bullets on the left of the right-aligned text */
+    margin: 0;
+    width: auto; /* Allow ul to size based on content */
+    display: flex; /* Make the ul a flex container */
+    flex-direction: column; /* Stack list items vertically */
+    align-items: flex-end; /* Align items to the right */
+  }
+
+  .navbar-links li {
+    margin: 5px 0; /* Vertical spacing between stacked items */
+    padding: 0; /* No padding directly on li */
+  }
+
+  .navbar-links a {
+    font-family: 'Noto Sans', sans-serif; /* Ensure Noto Sans is applied */
+    font-size: 1.1rem; /* Adjust font size to match image */
+    color: #333; /* Default text color */
+    display: block; /* Make the anchor tag a block element for click area */
+    padding: 5px 0; /* Adjust padding for click area and visual space */
+    text-decoration: underline; /* Underline by default, as seen in image */
+    transition: background-color 0.2s ease, color 0.2s ease;
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+
+  .navbar-links a:hover {
+    background-color: transparent; /* No background on hover for these items */
+    color: #007bff; /* Blue color on hover */
+    text-decoration: none; /* Remove underline on hover if desired, or keep as underline */
+  }
+
+  /* Overlay to dim background when menu is open */
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dim background */
+    z-index: 1000;
+    transition: all 0.5 ease;
+  }
+
+  .mobile-navbar-links {
+    padding:10% 0;
+  }
+
+  .mobile-navbar-links-list {
+    list-style: none;
+    display: grid;
+    width: 100%;
+    padding: 0;
+  }
+
+  .mobile-navbar-links-list li {
+    padding: 10px 0;
+    transition: all 0.3 ease;
+    color: white;
+  }
+
+  .mobile-navbar-links-list a {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .mobile-navbar-links-list li:hover {
+    background-color: gray;
+    color: #2da657;
+    }
 }
