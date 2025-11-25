@@ -252,7 +252,7 @@ function Home() {
       {/* Section 4: What can SAS do? */}
       <section className="section-4-what-can-do-new-design animate-on-scroll" ref={section4Ref}>
         <div className="section-4-what-can-do-card" style={{ backgroundImage: `url(${homeVideoImage})` }}>
-          <h2 style={{fontSize:'2.5rem'}}>What can SAS do?</h2>
+          <h2 style={{fontSize:'2rem'}}>What can SAS do?</h2>
           <p>SAS presents and organizes the information you need to make informed sourcing decisions for your Amazon sourcing. Understand all aspects of the product, sales, profitability and competition.</p>
           <div className="play-button-container">
             <div className="play-button"></div>

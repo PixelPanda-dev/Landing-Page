@@ -237,6 +237,18 @@ code {
   
 }
 
+
+
+.nav-overlay {
+  display: none;
+}
+
+.nav-overlay.open {
+  display: block;
+}
+
+
+
 .features-overview {
   background-color: #fff;
   padding: 40px 20px;
@@ -934,7 +946,7 @@ code {
   font-size: 3rem;
   margin-bottom: 20px;
   text-shadow: 1px 2px 5px #5d3519;
-  font-family: 'Anton';
+  font-family: 'Poppins';
   font-weight: 200;
 }
 
@@ -3467,7 +3479,7 @@ code {
     margin-bottom: 25px;
   }
   .arbitrage-image-and-background {
-    height: 300px;
+    height: 100px;
   }
   .arbitrage-people-image {
     max-width: 95%;
@@ -3630,7 +3642,27 @@ code {
   }
 
   .hero-section h1 {
-    line-height: 1.1;
+    line-height: 1.2;
+  }
+
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+
+  .analysis-features-right .analysis-points .part h1  {
+    font-size: 1.5rem;
+  }
+
+  .analysis-features-right .analysis-points .part {
+    border-radius: 30px;
+  }
+
+  .news-updates-button {
+    background-color: #ff7f27;
+  }
+
+  .arbitrage-episode-card {
+    border-radius: 30px;
   }
 
   .section-4-what-can-do-card p {
@@ -4529,11 +4561,12 @@ code {
   /* Overlay to dim background when menu is open */
   .nav-overlay {
     position: fixed;
+    display: block;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Dim background */
+    background-color: #fffffff7; /* Dim background */
     z-index: 1000;
     transition: all 0.5 ease;
   }
@@ -4556,14 +4589,11 @@ code {
   }
 
   .mobile-navbar-links-list a {
-    color: white;
+    color: #e66a00;
     font-size: 2rem;
     font-weight: 600;
     text-decoration: none;
   }
 
-  .mobile-navbar-links-list li:hover {
-    background-color: gray;
-    color: #2da657;
-    }
 }
+
